@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import {  Nav, NavItem } from 'reactstrap';
+import { Nav, NavItem } from 'reactstrap';
 import PropTypes from 'prop-types';
 
-import {  AppNavbarBrand, AppSidebarToggler } from '@coreui/react';
-//import logo from '../../assets/img/brand/logo.svg'
+import { AppNavbarBrand, AppSidebarToggler } from '@coreui/react';
+import logo from '../../assets/img/brand/logo.svg'
 import sygnet from '../../assets/img/brand/sygnet.svg'
 
 const propTypes = {
@@ -23,7 +23,7 @@ class DefaultHeader extends Component {
       <React.Fragment>
         <AppSidebarToggler className="d-lg-none" display="md" mobile />
         <AppNavbarBrand
-          full={{ src: null, width: 89, height: 25, alt: 'Logo' }}
+          full={{ src: logo, width: 89, height: 25, alt: 'Logo' }}
           minimized={{ src: sygnet, width: 30, height: 30, alt: 'Logo' }}
         />
         <AppSidebarToggler className="d-md-down-none" display="lg" />
@@ -32,7 +32,7 @@ class DefaultHeader extends Component {
           <NavItem className="px-3">
             <NavLink to="/entrega" className="nav-link" >Entrega</NavLink>
           </NavItem>
-         
+
         </Nav>
         <Nav className="ml-auto" navbar>
         </Nav>
